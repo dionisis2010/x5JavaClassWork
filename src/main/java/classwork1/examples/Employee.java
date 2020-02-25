@@ -1,6 +1,10 @@
 package classwork1.examples;
 
-public class Employee {
+import classwork1.main.Workable;
+import classwork2.Speakable;
+
+public class Employee implements Speakable, Workable
+{
     private String firstName;
     private String lastName;
     private static int phoneNumber;
@@ -59,7 +63,7 @@ public class Employee {
         return res;
     }
 
-    void work() {
+    public void work() {
         System.out.println();
     }
 
@@ -77,5 +81,10 @@ public class Employee {
         for (int i = 0; i < employee.length; i++) {
             System.out.println(employee[i].firstName + " " + employee[i].lastName);
         }
+    }
+
+    public String speak() {
+        System.out.println("hi");
+        return "Hi";
     }
 }
