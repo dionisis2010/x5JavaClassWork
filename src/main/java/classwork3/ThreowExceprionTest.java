@@ -18,6 +18,7 @@ public class ThreowExceprionTest {
 //        m();
     }
 
+
     static void m(){
         throw new CustomException("1344");
     }

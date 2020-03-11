@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="" ?>
+<class>Car</class>
+<filds>
+<field>color</field>
+<field>size</field>
+<field>power</field>
+</filds>
